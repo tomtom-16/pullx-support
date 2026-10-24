@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Modes d’exercice, blocs REPEAT, séance rapide, consignes, résultats, enregistrement et import : comprendre PullX.">
+<meta name="robots" content="noindex">
+<title>Comprendre PullX — Guide des notions et fonctions</title>
+<link rel="stylesheet" href="assets/brand.css">
+<style>
+:root { color-scheme: dark; --bg:#071318; --panel:#10232b; --text:#edf7f6; --muted:#b4c8cc; --accent:#31e5aa; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font:1rem/1.7 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+header,main,footer { max-width:840px; margin:auto; padding:1.5rem; }
+header { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:1rem; border-bottom:1px solid #30464c; }
+nav { display:flex; flex-wrap:wrap; gap:1rem; }
+a { color:var(--accent); text-underline-offset:.2em; overflow-wrap:anywhere; }
+a:focus-visible { outline:3px solid var(--accent); outline-offset:5px; }
+h1 { font-size:clamp(2rem,6vw,3rem); line-height:1.15; margin:.6rem 0 1rem; }
+h2 { font-size:1.3rem; line-height:1.4; margin-top:2rem; }
+p,li { max-width:72ch; }
+.date,footer { color:var(--muted); }
+.notice { padding:1rem 1.2rem; border:1px solid #786b39; border-radius:12px; background:#2b2819; }
+.contact { display:inline-block; padding:.8rem 1.2rem; border-radius:12px; background:var(--accent); color:#071318; font-weight:700; text-decoration:none; }
+.intro { font-size:1.15rem; color:var(--muted); }
+footer { border-top:1px solid #30464c; font-size:.9rem; margin-top:2rem; }
+.skip { position:absolute; left:-9999px; }.skip:focus { position:static; }
+</style>
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header><a class="brand" href="support.html" aria-label="pullX"><span class="brand__word">pull</span><span class="brand__x">X</span></a><nav aria-label="Navigation principale"><a href="support.html">Assistance</a><a href="guide.html">Comprendre PullX</a><a href="privacy-policy.html">Confidentialité</a></nav></header>
+<main id="contenu">
+<h1>Comprendre PullX</h1>
+<p class="date">Dernière mise à jour : 24 octobre 2026</p>
+<p class="intro">Des repères pour préparer vos séances, suivre vos résultats et utiliser les fonctions de PullX.</p>
+<nav aria-label="Sur cette page">
+<ul>
+<li><a href="#modes">RÉP., HOLD et EMOM</a></li>
+<li><a href="#repeat">Blocs REPEAT, séries et tours</a></li>
+<li><a href="#emom">EMOM : choisir la durée des intervalles</a></li>
+<li><a href="#seances">Séance rapide ou bibliothèque</a></li>
+<li><a href="#signaux">Préparation et signaux</a></li>
+<li><a href="#consignes">Consignes</a></li>
+<li><a href="#resultats">Objectif prévu et résultat réalisé</a></li>
+<li><a href="#enregistrement">Terminer avec ou sans enregistrement</a></li>
+<li><a href="#prompt-ia">Prompt IA et conversion de séance</a></li>
+<li><a href="#imports">Les deux types d’import</a></li>
+</ul>
+</nav>
+<section id="modes">
+<h2>RÉP., HOLD et EMOM : quel mode choisir ?</h2>
+<ul>
+<li><strong>RÉP. (ou REP)</strong> : un objectif de répétitions, par exemple 8 pompes. Effectuez l’exercice à votre rythme, puis appuyez sur « Valider » pour passer à l’étape suivante. PullX ne compte pas automatiquement vos mouvements.</li>
+<li><strong>HOLD</strong> : un maintien chronométré, par exemple 30 secondes de gainage. Appuyez sur « Démarrer » : une préparation peut précéder le maintien, puis PullX passe à l’étape suivante à la fin du temps prévu.</li>
+<li><strong>EMOM</strong> : un objectif de répétitions à réaliser dans un intervalle, par exemple 5 tractions en 60 secondes. Le temps restant sert à récupérer avant l’étape suivante. La durée de l’intervalle est configurable.</li>
+</ul>
+<p>Pour un maintien, choisissez HOLD. Pour des répétitions sans intervalle imposé, choisissez RÉP. Pour des répétitions dans un temps défini, choisissez EMOM.</p>
+</section>
+<section id="repeat">
+<h2>REPEAT : répéter un bloc complet</h2>
+<p>Un bloc REPEAT regroupe un ou plusieurs exercices et, si vous le souhaitez, des repos. Le réglage « Séries » indique combien de fois PullX rejoue <strong>tout le contenu du bloc, dans le même ordre</strong>. Chaque passage complet constitue un tour.</p>
+<p>Par exemple, un bloc de 3 séries contenant 5 tractions, 60 secondes de repos, 10 pompes et 60 secondes de repos rejoue cet enchaînement 3 fois. Vous effectuez donc 3 passages de chaque exercice. Les repos sont eux aussi répétés, y compris celui placé à la fin du dernier tour.</p>
+<p>Un repos placé après le bloc, à l’extérieur de celui-ci, n’est joué qu’une fois. Un bloc peut mélanger RÉP., HOLD, EMOM et repos ; il ne peut pas contenir un autre bloc REPEAT.</p>
+</section>
+<section id="emom">
+<h2>EMOM : un intervalle dont vous choisissez la durée</h2>
+<p>Dans son usage habituel, EMOM signifie « Every Minute On the Minute » : un effort démarre au début de chaque minute. Dans PullX, le mode EMOM reprend ce principe avec une durée réglable pour chaque exercice. Vous choisissez un objectif de répétitions et le temps disponible pour les réaliser. Si vous terminez avant la fin, le temps restant sert à récupérer.</p>
+<p>Un exercice EMOM représente un seul intervalle. Pour répéter un ou plusieurs exercices, placez-les dans un bloc <strong>REPEAT</strong> et choisissez le nombre de tours. Chaque exercice conserve son propre objectif et sa propre durée ; celle-ci ne représente pas la durée totale du bloc.</p>
+<h3>Exemple : un seul exercice, 10 fois 60 secondes</h3>
+<p>Créez un bloc REPEAT de 10 tours contenant un exercice EMOM : 5 tractions en 60 secondes. À chaque tour, réalisez les 5 tractions, puis récupérez pendant le temps restant. Les intervalles représentent 10 minutes au total, hors attente de démarrage ou pause.</p>
+<h3>Exemple : plusieurs exercices, avec des intervalles de 90 secondes</h3>
+<p>Créez un bloc REPEAT de 4 tours contenant, dans cet ordre :</p>
+<ol><li>Tractions en mode EMOM : 5 répétitions en 90 secondes.</li><li>Pompes en mode EMOM : 10 répétitions en 90 secondes.</li></ol>
+<p>Un tour enchaîne les deux exercices et représente 3 minutes. Les 4 tours représentent 12 minutes d’intervalles, hors attentes de démarrage ou pauses. Vous pouvez choisir une durée différente pour chaque exercice.</p>
+<h3>Comment les intervalles démarrent-ils ?</h3>
+<p>Au premier tour d’un bloc REPEAT, chaque exercice EMOM demande un démarrage manuel. À partir du deuxième tour, les exercices EMOM démarrent automatiquement à leur arrivée. Un exercice EMOM placé hors d’un bloc REPEAT demande aussi un démarrage manuel.</p>
+<p>À la fin du temps prévu, PullX passe à l’étape suivante. Si vous souhaitez un repos supplémentaire après un intervalle, ajoutez une étape de repos dans le bloc.</p>
+</section>
+<section id="seances">
+<h2>Séance rapide ou séance de la bibliothèque ?</h2>
+<p><strong>La séance rapide</strong> permet de démarrer un exercice répété sur plusieurs séries, avec un mode RÉP., HOLD ou EMOM. Réglez l’objectif, le nombre de séries et, pour RÉP. et HOLD, le repos. En EMOM, la récupération se fait dans le temps restant de l’intervalle.</p>
+<p>Vos réglages sont conservés pour la prochaine utilisation, mais la séance rapide n’ajoute aucun modèle à votre bibliothèque. Son résultat peut être conservé dans l’historique si vous choisissez de l’enregistrer à la fin.</p>
+<p><strong>La bibliothèque</strong> sert à conserver des séances réutilisables : donnez-leur un titre, nommez les exercices, ajoutez des consignes, organisez les repos et les blocs REPEAT. Vous pouvez ensuite retrouver et modifier ces séances avant une prochaine utilisation.</p>
+<p>La séance de la bibliothèque est le programme à suivre ; une entrée d’historique correspond à une exécution de ce programme.</p>
+</section>
+<section id="signaux">
+<h2>Préparation, signal périodique et alerte de fin</h2>
+<ul>
+<li><strong>Préparation — HOLD</strong> : le temps pour vous mettre en position après avoir appuyé sur « Démarrer ». Il précède la durée de maintien. Une préparation de 5 secondes et un maintien de 30 secondes donnent 5 secondes pour vous installer, puis 30 secondes d’effort.</li>
+<li><strong>Signal périodique — HOLD</strong> : un repère sonore à intervalles réguliers pendant le maintien. Un réglage de 10 secondes donne un repère toutes les 10 secondes ; il ne crée pas de repos et ne relance pas le maintien.</li>
+<li><strong>Alerte de fin — EMOM</strong> : un signal unique avant la fin de l’intervalle. Avec un réglage de 5 secondes, le signal vous avertit lorsqu’il reste 5 secondes ; il ne termine pas l’intervalle.</li>
+</ul>
+<p>Dans l’éditeur, une valeur de 0 désactive la préparation ou le signal concerné. L’EMOM n’utilise pas la préparation ni le signal périodique du HOLD.</p>
+</section>
+<section id="consignes">
+<h2>Les consignes : vos repères pour un exercice</h2>
+<p>Les consignes sont <strong>facultatives</strong> : vous pouvez laisser ce champ vide. Ce sont de courts rappels que vous ajoutez à un exercice dans l’éditeur. Elles s’affichent pendant cet exercice, sous son objectif, pour vous aider à suivre les indications que vous avez préparées.</p>
+<p>Par exemple : « Épaules basses », « Mouvement contrôlé » ou « Garder la position ». Saisissez <strong>une consigne par ligne</strong> dans la section « Consignes ». Les lignes vides et les doublons sont ignorés.</p>
+<p>Les consignes sont du texte : elles ne modifient pas les répétitions, les durées ou les signaux de l’exercice.</p>
+</section>
+<section id="resultats">
+<h2>Objectif prévu et résultat réalisé</h2>
+<p>L’objectif est ce que vous avez prévu dans la séance : par exemple 8 répétitions ou 30 secondes de maintien. Le résultat est ce que vous avez effectivement réalisé : par exemple 6 répétitions ou 25 secondes.</p>
+<p>Pendant un repos qui suit un exercice RÉP. ou HOLD, ouvrez « Feedback exercice précédent », puis « Renseigner » ou « Modifier ». Vous pouvez ajuster les répétitions réalisées ou les secondes tenues, indiquer votre effort ressenti, une éventuelle douleur et une note. L’effort se choisit parmi « Facile », « Normal », « Difficile » et « Très difficile » ; la douleur peut être précisée par un score sur 10, une zone et un côté.</p>
+<p>Ces informations décrivent ce passage de l’exercice. Elles ne modifient pas les objectifs du programme dans la bibliothèque.</p>
+<p>Renseigner ce feedback permet de retrouver le réalisé, l’effort, la douleur et vos notes dans le compte rendu affiché à la fin de la séance. Si vous choisissez « Terminer et enregistrer », ces informations sont aussi conservées dans l’historique PullX.</p>
+<p>Dans l’historique, ouvrez le détail de la séance et choisissez <strong>« Copier le rapport »</strong>. Vous pouvez ensuite coller ce compte rendu sous forme de texte dans un journal d’entraînement, une application de notes ou le document de votre choix.</p>
+<p>Sans correction du réalisé, les vues de résultat reprennent l’objectif prévu : ce n’est pas une mesure automatique de vos mouvements ou de votre temps réellement tenu. Le formulaire pendant le repos n’est pas proposé après un EMOM.</p>
+</section>
+<section id="enregistrement">
+<h2>Terminer avec ou sans enregistrement</h2>
+<p>Sur l’écran de fin, vous choisissez ce que vous souhaitez conserver :</p>
+<ul>
+<li><strong>« Terminer et enregistrer »</strong> ajoute le résultat à l’historique PullX, avec les informations que vous avez renseignées. Si une séance Santé a été lancée sur Apple Watch et que les autorisations nécessaires sont accordées, ce choix demande aussi son enregistrement dans Santé.</li>
+<li><strong>« Terminer sans enregistrer »</strong> écarte le résultat en attente : aucune entrée n’est ajoutée à l’historique PullX pour cette exécution. La séance Santé en cours sur la montre est également écartée.</li>
+</ul>
+<p>Ce choix ne supprime pas le programme de la bibliothèque. L’historique PullX et les séances enregistrées dans Santé sont deux copies distinctes : supprimer une entrée de l’historique PullX ne supprime pas sa copie dans Santé. Pour celle-ci, utilisez l’app Santé d’Apple.</p>
+</section>
+<section id="prompt-ia">
+<h2>Le prompt IA : des instructions à copier dans une IA de votre choix</h2>
+<p><strong>PullX ne fait pas appel à une IA.</strong> L’action « Copier prompt IA » copie un texte d’instructions qui décrit le format de séance accepté par PullX. Ce texte demande à une IA externe de convertir votre séance en un fichier texte structuré, au format JSON PullX.</p>
+<p>Vous choisissez le service d’IA et vous y collez vous-même le prompt et la séance à convertir. PullX n’envoie aucune demande ni donnée à ce service.</p>
+<h3>Convertir puis importer une séance</h3>
+<ol>
+<li>Dans la bibliothèque de séances, ouvrez le menu des actions IA et choisissez <strong>« Copier prompt IA »</strong>.</li>
+<li>Ouvrez le service d’IA de votre choix. Collez le prompt, puis ajoutez le texte de la séance à convertir : exercices, répétitions, durées, repos et nombre de tours.</li>
+<li>Demandez la conversion, puis copiez le JSON de la réponse.</li>
+<li>Revenez dans PullX et choisissez <strong>« Importer une séance IA »</strong> dans le même menu. Collez le JSON dans le champ « JSON à importer », puis utilisez <strong>« Vérifier »</strong>.</li>
+<li>Contrôlez la prévisualisation et choisissez <strong>« Ajouter la séance »</strong>. Relisez les exercices, les tours, les répétitions, les durées et les repos dans l’éditeur avant de lancer la séance.</li>
+</ol>
+<p>La vérification contrôle que la réponse respecte le format attendu. Elle ne garantit pas que l’IA a correctement retranscrit votre séance. Si la réponse est refusée ou si les valeurs sont incorrectes, faites corriger la conversion et vérifiez-la à nouveau.</p>
+<p>Le contenu que vous collez dans un service d’IA est traité selon les règles de ce service. Partagez seulement les éléments nécessaires à la conversion de votre séance.</p>
+</section>
+<section id="imports">
+<h2>Importer une séance ou importer un export ?</h2>
+<p>Les deux fonctions utilisent du JSON, un format de texte structuré, mais elles servent à des opérations différentes :</p>
+<ul>
+<li><strong>« Importer une séance IA » — bibliothèque</strong> : ajoute une séance à partir du format JSON PullX décrit par le prompt. Après vérification et prévisualisation, « Ajouter la séance » crée un programme que vous pouvez relire dans l’éditeur. Cette opération ne remplace pas votre bibliothèque ni votre historique.</li>
+<li><strong>« Importer un export » — Maintenance</strong> : restaure les données issues de « Exporter les données ». Après validation, le bouton « Remplacer les données » remplace les séances, l’historique et les données de séance en cours ou en attente par ceux de l’export. Il ne fusionne pas les deux ensembles.</li>
+</ul>
+<p>Vous pouvez aussi importer l’export d’un ami qui a utilisé « Exporter les données » pour partager ses séances. Il vous transmet son export ; collez son contenu JSON dans « Importer un export », puis validez et consultez la prévisualisation avant de choisir « Remplacer les données ».</p>
+<p><strong>Un export peut aussi contenir l’historique et les données de séance en cours ou en attente de votre ami.</strong> Il doit en vérifier le contenu avant de le partager. L’import remplace vos données locales par les siennes : il n’ajoute pas simplement ses séances aux vôtres.</p>
+<p>Avant de remplacer vos données, conservez un export récent si vous souhaitez pouvoir retrouver leur état actuel. Un JSON de séance et un export de sauvegarde ne sont pas interchangeables.</p>
+</section>
+<p><a href="support.html">Retour à l’assistance et au formulaire de contact</a></p>
+</main>
+<footer>PullX · iPhone et Apple Watch · <a href="support.html">Assistance</a> · <a href="privacy-policy.html">Confidentialité</a></footer>
+</body>
+</html>
