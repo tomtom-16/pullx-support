@@ -7,76 +7,25 @@
 <meta name="robots" content="noindex">
 <title>Assistance PullX — PullX</title>
 <link rel="stylesheet" href="assets/brand.css">
-<style>
-:root { color-scheme: dark; --bg:#071318; --panel:#10232b; --text:#edf7f6; --muted:#b4c8cc; --accent:#31e5aa; }
-* { box-sizing:border-box; }
-body { margin:0; background:var(--bg); color:var(--text); font:1rem/1.7 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
-header,main,footer { max-width:840px; margin:auto; padding:1.5rem; }
-header { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:1rem; border-bottom:1px solid #30464c; }
-nav { display:flex; flex-wrap:wrap; gap:1rem; }
-a { color:var(--accent); text-underline-offset:.2em; overflow-wrap:anywhere; }
-a:focus-visible { outline:3px solid var(--accent); outline-offset:5px; }
-h1 { font-size:clamp(2rem,6vw,3rem); line-height:1.15; margin:.6rem 0 1rem; }
-h2 { font-size:1.3rem; line-height:1.4; margin-top:2rem; }
-p,li { max-width:72ch; }
-.date,footer { color:var(--muted); }
-.notice { padding:1rem 1.2rem; border:1px solid #786b39; border-radius:12px; background:#2b2819; }
-.contact { display:inline-block; padding:.8rem 1.2rem; border-radius:12px; background:var(--accent); color:#071318; font-weight:700; text-decoration:none; }
-.intro { font-size:1.15rem; color:var(--muted); }
-footer { border-top:1px solid #30464c; font-size:.9rem; margin-top:2rem; }
-.skip { position:absolute; left:-9999px; }.skip:focus { position:static; }
-</style>
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/site.js"></script>
 </head>
-<body>
+<body id="top">
 <a class="skip" href="#contenu">Aller au contenu</a>
-<header><a class="brand" href="support.html" aria-label="pullX"><span class="brand__word">pull</span><span class="brand__x">X</span></a><nav aria-label="Navigation principale"><a href="#english" lang="en" hreflang="en">English</a><a href="support.html">Assistance</a><a href="guide.html">Comprendre PullX</a><a href="privacy-policy.html">Confidentialité</a></nav></header>
-<main id="contenu">
-<h1>Assistance PullX</h1>
-<p class="date">Dernière mise à jour : 27 octobre 2026</p>
-<p class="intro">Une aide pour vos séances, Apple Watch et vos données.</p>
-<section><h2>Contacter l’équipe PullX</h2><p>Pour une question, un problème ou une demande concernant vos données, utilisez le formulaire de contact de l’équipe PullX.</p><p>Indiquez la version de PullX, le modèle de votre iPhone ou Apple Watch, la version du système et les étapes qui permettent de reproduire le problème. Aucun mot de passe, document Santé ou export complet de vos séances n’est nécessaire pour un premier échange.</p></section>
-<p><a class="contact" href="https://tally.so/r/2jEzNe">Ouvrir le formulaire de contact</a></p><p>Le formulaire est hébergé par Tally. Vos réponses sont transmises à l’équipe PullX ; elles ne sont pas publiées sur ces pages. Consultez la <a href="privacy-policy.html">politique de confidentialité</a> avant votre envoi.</p>
-<section><h2>Commencer une séance</h2><p>Depuis l’accueil, choisissez une séance, une séance rapide ou le mode Tabata. L’éditeur permet de préparer des exercices, des maintiens, des repos et des blocs de répétition.</p></section>
-<section><h2>Comprendre les notions de PullX</h2><p>Modes d’exercice, blocs REPEAT, séance rapide, consignes, résultats, enregistrement et imports : consultez le <a href="guide.html">guide Comprendre PullX</a> pour les explications et les exemples.</p></section>
-<section><h2>Utiliser Apple Watch</h2><p>Lancez la séance sur l’iPhone jumelé et ouvrez PullX sur la montre. L’iPhone conserve la séance de référence et l’historique. Une action sur la montre doit être confirmée par le retour de l’iPhone.</p><p>Si la montre ne reçoit plus de mise à jour, vérifiez que l’iPhone et la montre sont à portée et que PullX est ouvert sur l’iPhone. Une action encore en attente peut être perdue si l’app Watch est arrêtée avant sa livraison.</p></section>
-<section><h2>Enregistrer dans Santé</h2><p>PullX peut demander sur Apple Watch l’autorisation d’enregistrer une séance de renforcement dans Santé. À la fin, choisissez l’enregistrement ou la fin sans enregistrement. PullX ne demande pas de lire vos données Santé.</p><p>Pour supprimer une séance déjà enregistrée dans Santé, utilisez l’app Santé d’Apple. La suppression de l’historique PullX ne supprime pas cette copie.</p></section>
-<section><h2>Exporter ou supprimer vos données</h2><p>Depuis l’accueil, ouvrez le bouton de réglages en forme d’engrenage pour accéder à Maintenance. « Exporter les données » prépare un fichier JSON à conserver dans un emplacement de votre choix.</p><p>« Réinitialisation complète » supprime la séance active, vide l’historique et restaure les séances par défaut. Les réglages de séance rapide et de l’éditeur disposent de boutons de réinitialisation distincts. Les exports que vous avez enregistrés ailleurs restent à supprimer séparément.</p></section>
-<section><h2>À propos de PullX</h2><p>PullX est un outil de suivi fitness. Il ne fournit pas de diagnostic et ne remplace pas l’avis d’un professionnel de santé.</p></section>
-<section>
-<h2>Créer un exercice chronométré ou un EMOM</h2>
-<p>Choisissez « Répétitions » pour un exercice sans chrono, ou « Chronométré » pour une durée avec répétitions facultatives. HOLD et EMOM sont réunis dans ce type Chronométré ; EMOM est un raccourci de configuration. Tous les chronos proposent préparation, décompte final, alerte anticipée et signal périodique.</p>
-<p>Dans l’éditeur d’un bloc REPEAT, le bouton « + EMOM », à côté d’Exercice et Repos, ajoute un exercice de 60 secondes avec 5 répétitions et le démarrage automatique. Choisissez le nombre de séries du bloc pour créer plusieurs minutes. Pour une autre durée, parlez d’intervalles. La préparation automatique ne se répète pas entre exercices consécutifs du même bloc ; un repos, un exercice manuel ou un nouveau bloc ouvre un nouvel enchaînement.</p>
-<p>Dans le formulaire d’exercice et la séance rapide, choisissez « Chronométré » puis le démarrage automatique pour configurer des intervalles. Les intervalles automatiques nécessitent l’accès complet. Après une mise à jour, mettez également à jour l’application Watch.</p>
-<p>Consultez le <a href="guide.html#emom">guide EMOM et intervalles</a> et les <a href="guide.html#signaux">réglages de préparation et de signaux</a>.</p>
-</section>
-<section id="english" lang="en" aria-labelledby="support-en-title">
-<h1 id="support-en-title">PullX Support</h1>
-<p class="date">Last updated: 27 October 2026</p>
-<p class="intro">Help with your workouts, Apple Watch and data.</p>
-<h2>Contact the PullX team</h2>
-<p>For questions, problems or requests about your data, use the <a class="contact" href="https://tally.so/r/2jEzNe">contact form</a>. You can write in English.</p>
-<p>Include your PullX version, iPhone or Apple Watch model, operating system version and the steps that reproduce the problem. You do not need to send passwords, Health documents or a full workout export for an initial enquiry.</p>
-<p>The form is hosted by Tally. Your answers are sent to the PullX team and are not published on these pages. Read the <a href="privacy-policy.html#english">privacy policy</a> before submitting.</p>
-<h2>Start a workout</h2>
-<p>From Home, choose a saved workout, Quick workout or Tabata. The Editor lets you create repetition or timed exercises, rest steps and repeat blocks. See the <a href="guide-en.html">English user guide</a> for examples.</p>
-<h2>Use PullX in English on a French iPhone</h2>
-<p>Add English in Settings → General → Language &amp; Region, keeping French as the main language. Then select Settings → Apps → PullX → Language → English and reopen PullX. Existing workout names, instructions and notes stay as you entered them. Apple Watch has its own language settings in the Watch app on iPhone.</p>
-<h2>Use Apple Watch</h2>
-<p>Start the workout on your paired iPhone, then open PullX on your watch. The iPhone keeps the authoritative workout and history. Actions on the watch must be confirmed by the iPhone’s response.</p>
-<p>If updates stop, check that the devices are within range and PullX is open on the iPhone. A pending action may be lost if the Watch app closes before delivery. Update both apps together.</p>
-<h2>Save to Health</h2>
-<p>On Apple Watch, PullX may ask permission to save a strength training workout to Health. At the end, choose Finish and save or Finish without saving. PullX does not request access to read your Health data. A workout already saved to Health must be deleted separately in Apple’s Health app; deleting PullX history does not delete that copy.</p>
-<h2>Export or delete your data</h2>
-<p>Open the gear button on Home to access Maintenance. Export data prepares a JSON file you can save wherever you choose. Reset all data deletes the active workout, clears history and restores default workouts. Quick workout and Editor settings have separate reset buttons. Exports saved elsewhere must be deleted separately.</p>
-<h2>Create an EMOM or timed exercise</h2>
-<p>Choose Repetitions for an exercise without a timer, or Timed for a duration with an optional rep goal. Timed exercises offer preparation, a final countdown, an early warning and a periodic cue.</p>
-<p>EMOM is a shortcut for the Timed type, which combines the former Hold and EMOM types. Inside a repeat block, + EMOM adds a 60-second exercise with 5 reps and automatic start. Set the block’s number of sets to create several minutes. Other durations are called intervals. Automatic preparation runs only at the start of consecutive automatic exercises in the same block. A rest step, a manual exercise or a new block starts a new sequence. In the exercise form and Quick workout, choose Timed and Automatic to configure intervals. Automatic intervals require full access.</p>
-<h2>About PullX</h2>
-<p>PullX is a fitness tracking tool. It does not provide diagnoses or replace advice from a healthcare professional.</p>
-<p><a href="privacy-policy.html#english">Privacy policy in English</a> · <a href="#contenu" lang="fr">Français</a></p>
-</section>
-
+<header><div class="header-inner"><a class="brand" href="support.html" aria-label="PullX"><span class="brand__word">pull</span><span class="brand__x">X</span></a><nav class="site-nav" aria-label="Navigation principale"><a href="support.html" aria-current="page">Assistance</a><a href="guide.html">Guide</a><a href="privacy-policy.html">Confidentialité</a></nav><a class="language-switch" href="support-en.html" lang="en" hreflang="en" id="english"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></svg>English</a></div></header>
+<main id="contenu" aria-label="Assistance PullX">
+<section><h2 id="contacter-lequipe-pullx">Contacter l’équipe PullX</h2>
+<p>Pour une question, un problème ou une demande concernant vos données, écrivez à l’équipe PullX.</p>
+<p><a class="contact" href="https://tally.so/r/2jEzNe">Ouvrir le formulaire de contact</a></p>
+<p>Indiquez la version de PullX, le modèle de votre iPhone ou Apple Watch, la version du système, le résultat attendu et ce qui s’est produit. Pour signaler un problème, précisez les étapes qui permettent de le reproduire et le message d’erreur éventuel.</p>
+<p>N’envoyez pas de mot de passe, de document Santé ou d’export complet de vos séances pour un premier échange. Le formulaire est hébergé par Tally ; vos réponses sont transmises à l’équipe PullX et ne sont pas publiées ici. Consultez la <a href="privacy-policy.html">politique de confidentialité</a> avant votre envoi.</p></section>
+<section><h2 id="avant-de-signaler-un-probleme">Avant de signaler un problème</h2>
+<ul><li>Vérifiez que PullX est à jour sur l’iPhone et, si vous l’utilisez, sur l’Apple Watch. Mettez les deux applications à jour ensemble.</li><li>Si la montre ne reçoit plus de mise à jour, vérifiez que les appareils sont à portée et que PullX est ouvert sur l’iPhone.</li><li>Si le problème persiste, précisez s’il se reproduit à chaque fois ou seulement dans certaines circonstances. Évitez de réinitialiser vos données pendant l’examen du problème.</li></ul>
+<p>Pour la préparation des séances, les chronos, l’Apple Watch et l’enregistrement, consultez le <a href="guide.html">guide</a>.</p></section>
+<section><h2 id="demandes-concernant-vos-donnees">Demandes concernant vos données</h2>
+<p>Utilisez le même formulaire pour une question de confidentialité ou pour demander l’accès, la correction ou la suppression des informations transmises à l’équipe.</p>
+<p>Les données de séance conservées sur vos appareils se gèrent dans PullX. Une séance déjà enregistrée dans Santé doit être supprimée séparément dans l’app Santé d’Apple. Consultez les <a href="privacy-policy.html#conservation-et-suppression">informations sur la conservation et la suppression</a>.</p></section>
 </main>
-<footer>PullX · iPhone et Apple Watch · <a href="support.html">Assistance</a> · <a href="privacy-policy.html">Confidentialité</a></footer>
+<footer>PullX · iPhone et Apple Watch · <a href="support.html">Assistance</a> · <a href="privacy-policy.html">Confidentialité</a><a class="back-top" href="#top">Retour en haut <span aria-hidden="true">↑</span></a><p class="date">Dernière mise à jour : 27 octobre 2026</p></footer>
 </body>
 </html>

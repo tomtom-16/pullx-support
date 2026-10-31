@@ -7,48 +7,16 @@
 <meta name="robots" content="noindex">
 <title>Comprendre PullX — Guide des notions et fonctions</title>
 <link rel="stylesheet" href="assets/brand.css">
-<style>
-:root { color-scheme: dark; --bg:#071318; --panel:#10232b; --text:#edf7f6; --muted:#b4c8cc; --accent:#31e5aa; }
-* { box-sizing:border-box; }
-body { margin:0; background:var(--bg); color:var(--text); font:1rem/1.7 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
-header,main,footer { max-width:840px; margin:auto; padding:1.5rem; }
-header { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:1rem; border-bottom:1px solid #30464c; }
-nav { display:flex; flex-wrap:wrap; gap:1rem; }
-a { color:var(--accent); text-underline-offset:.2em; overflow-wrap:anywhere; }
-a:focus-visible { outline:3px solid var(--accent); outline-offset:5px; }
-h1 { font-size:clamp(2rem,6vw,3rem); line-height:1.15; margin:.6rem 0 1rem; }
-h2 { font-size:1.3rem; line-height:1.4; margin-top:2rem; }
-p,li { max-width:72ch; }
-.date,footer { color:var(--muted); }
-.notice { padding:1rem 1.2rem; border:1px solid #786b39; border-radius:12px; background:#2b2819; }
-.contact { display:inline-block; padding:.8rem 1.2rem; border-radius:12px; background:var(--accent); color:#071318; font-weight:700; text-decoration:none; }
-.intro { font-size:1.15rem; color:var(--muted); }
-footer { border-top:1px solid #30464c; font-size:.9rem; margin-top:2rem; }
-.skip { position:absolute; left:-9999px; }.skip:focus { position:static; }
-</style>
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/site.js" defer></script>
 </head>
-<body>
+<body id="top">
 <a class="skip" href="#contenu">Aller au contenu</a>
-<header><a class="brand" href="support.html" aria-label="pullX"><span class="brand__word">pull</span><span class="brand__x">X</span></a><nav aria-label="Navigation principale"><a href="guide-en.html" lang="en" hreflang="en">English</a><a href="support.html">Assistance</a><a href="guide.html">Comprendre PullX</a><a href="privacy-policy.html">Confidentialité</a></nav></header>
-<main id="contenu">
-<h1>Comprendre PullX</h1>
-<p class="date">Dernière mise à jour : 27 octobre 2026</p>
-<p class="intro">Des repères pour préparer vos séances, suivre vos résultats et utiliser les fonctions de PullX.</p>
-<nav aria-label="Sur cette page">
-<ul>
-<li><a href="#modes">Répétitions et Chronométré</a></li>
-<li><a href="#repeat">Blocs REPEAT, séries et tours</a></li>
-<li><a href="#emom">EMOM et intervalles automatiques</a></li>
-<li><a href="#seances">Séance rapide ou bibliothèque</a></li>
-<li><a href="#signaux">Préparation et signaux</a></li>
-<li><a href="#consignes">Consignes</a></li>
-<li><a href="#resultats">Objectif prévu et résultat réalisé</a></li>
-<li><a href="#enregistrement">Terminer avec ou sans enregistrement</a></li>
-<li><a href="#prompt-ia">Prompt IA et conversion de séance</a></li>
-<li><a href="#imports">Les deux types d’import</a></li>
-</ul>
-</nav>
-<section><h2>Version gratuite, essai et accès complet</h2><p>PullX est gratuit au téléchargement. Le mode gratuit permet une séance personnalisée de trois étapes maximum, une séance rapide de deux séries maximum et un Tabata simple. La Watch, l’historique, les exports et la suppression restent accessibles.</p><p>Depuis « Découvrir PullX complet », vous pouvez activer sept jours consécutifs d’accès complet gratuit. Aucun abonnement ni débit automatique ne suit. Le prix du déblocage définitif est affiché avant l’activation : il s’agit d’un achat unique, fixé à 4,99 € en France.</p><p>À la fin de l’essai, les fonctions avancées nécessitent le déblocage complet. Vos données sont conservées et une séance déjà lancée peut être terminée. « Restaurer les achats » retrouve vos droits avec le même compte Apple ; cela ne recommence pas l’essai. « Utiliser un code d’offre » permet d’utiliser une offre Apple reçue du développeur.</p></section>
+<header><div class="header-inner"><a class="brand" href="support.html" aria-label="PullX"><span class="brand__word">pull</span><span class="brand__x">X</span></a><nav class="site-nav" aria-label="Navigation principale"><a href="support.html">Assistance</a><a href="guide.html" aria-current="page">Guide</a><a href="privacy-policy.html">Confidentialité</a></nav><a class="language-switch" href="guide-en.html" lang="en" hreflang="en" id="english"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></svg>English</a></div></header>
+<main id="contenu" aria-label="Guide PullX">
+<nav class="toc" aria-label="Sur cette page"><details><summary>Sur cette page</summary><ul><li><a href="#version-gratuite-essai-et-acces-complet">Version gratuite, essai et accès complet</a></li><li><a href="#modes">Répétitions ou Chronométré : quel objectif choisir ?</a></li><li><a href="#repeat">REPEAT : répéter un bloc complet</a></li><li><a href="#emom">EMOM et intervalles automatiques</a></li><li><a href="#seances">Séance rapide ou séance de la bibliothèque ?</a></li><li><a href="#participation-watch">Choisir avec ou sans Apple Watch</a></li><li><a href="#signaux">Préparation et signaux sonores</a></li><li><a href="#consignes">Les consignes : vos repères pour un exercice</a></li><li><a href="#resultats">Objectif prévu et résultat réalisé</a></li><li><a href="#enregistrement">Terminer avec ou sans enregistrement</a></li><li><a href="#prompt-ia">Le prompt IA : des instructions à copier dans une IA de votre choix</a></li><li><a href="#imports">Importer une séance ou importer un export ?</a></li></ul></details></nav>
+
+<section><h2 id="version-gratuite-essai-et-acces-complet">Version gratuite, essai et accès complet</h2><p>PullX est gratuit au téléchargement. Le mode gratuit permet une séance personnalisée de trois étapes maximum, une séance rapide de deux séries maximum et un Tabata simple. La Watch, l’historique, les exports et la suppression restent accessibles.</p><p>Depuis « Découvrir PullX complet », vous pouvez activer sept jours consécutifs d’accès complet gratuit. Aucun abonnement ni débit automatique ne suit. Le prix du déblocage définitif est affiché avant l’activation : il s’agit d’un achat unique, fixé à 3,99 € en France.</p><p>À la fin de l’essai, les fonctions avancées nécessitent le déblocage complet. Vos données sont conservées et une séance déjà lancée peut être terminée. « Restaurer les achats » retrouve vos droits avec le même compte Apple ; cela ne recommence pas l’essai. « Utiliser un code d’offre » permet d’utiliser une offre Apple reçue du développeur.</p></section>
 <section id="modes">
 <h2>Répétitions ou Chronométré : quel objectif choisir ?</h2>
 <p>PullX propose <strong>deux types d’exercice</strong>. Les anciens types HOLD (maintien) et EMOM sont réunis dans « Chronométré » ; un EMOM se configure avec ce même type.</p>
@@ -80,6 +48,17 @@ footer { border-top:1px solid #30464c; font-size:.9rem; margin-top:2rem; }
 <p><strong>La bibliothèque</strong> sert à conserver des séances réutilisables : donnez-leur un titre, nommez les exercices, ajoutez des consignes, organisez les repos et les blocs REPEAT. Vous pouvez ensuite retrouver et modifier ces séances avant une prochaine utilisation.</p>
 <p>La séance de la bibliothèque est le programme à suivre ; une entrée d’historique correspond à une exécution de ce programme.</p>
 </section>
+<section id="participation-watch">
+<h2>Choisir avec ou sans Apple Watch</h2>
+<p>Avant de lancer une séance de la bibliothèque, une séance rapide ou un Tabata, le bouton Watch à gauche de Play active ou désactive la participation de la montre. Une montre cochée sur fond cyan indique « Avec Apple Watch » ; une montre barrée sur fond neutre indique « iPhone uniquement ». Chaque appui affiche une bulle expliquant le choix.</p>
+<p>Le mode par défaut est <strong>iPhone uniquement</strong>. Votre choix est mémorisé et partagé entre les trois écrans de préparation. Il s’applique à la prochaine séance et ne change plus pendant son déroulement.</p>
+<p>Le bouton apparaît lorsqu’une Apple Watch est associée et que PullX Watch y est installée, même si la liaison est temporairement coupée. Sans montre associée ou sans PullX Watch, la séance démarre sur iPhone uniquement ; votre préférence reste conservée.</p>
+<ul>
+<li><strong>iPhone uniquement</strong> : suivez les exercices, les chronos et les sons sur l’iPhone. Vous pouvez enregistrer le résultat dans l’historique PullX, sans ajout d’entraînement dans Santé. PullX n’active ni suivi Santé, ni commandes, ni vibrations sur la Watch pour cette séance. Un exercice lancé dans Exercice Apple sur la montre peut continuer.</li>
+<li><strong>Avec Apple Watch</strong> : lancez la séance sur l’iPhone, puis ouvrez PullX sur la montre pour suivre la séance et la contrôler. Le mode utilise une session d’exercice sur la Watch et interrompt un exercice Apple déjà en cours. L’enregistrement dans Santé dépend des autorisations et de votre décision en fin de séance.</li>
+</ul>
+<p>L’iPhone conserve l’état de référence et l’historique ; les actions Watch nécessitent sa confirmation. Gardez les deux applications à jour. La Live Activity reste disponible dans les deux modes sur les surfaces système compatibles.</p>
+</section>
 <section id="signaux">
 <h2>Préparation et signaux sonores</h2>
 <p>Ces réglages sont disponibles pour tous les exercices chronométrés, avec ou sans répétitions.</p>
@@ -90,7 +69,7 @@ footer { border-top:1px solid #30464c; font-size:.9rem; margin-top:2rem; }
 <li><strong>Signal périodique</strong> : repère toutes les X secondes pendant le chrono. Zéro le désactive.</li>
 </ul>
 <p>Si plusieurs signaux tombent ensemble, PullX joue un seul signal : priorité au décompte, puis à l’alerte, puis au signal périodique. Une alerte plus longue que le chrono est ramenée à sa durée.</p>
-<p>Les signaux sonores sont émis par l’iPhone lorsque l’application est au premier plan. La Watch conserve ses retours haptiques de changement d’étape. Le fonctionnement audio en arrière-plan dépend des limites système.</p>
+<p>Les signaux sonores sont émis par l’iPhone lorsque l’application est au premier plan. En mode « Avec Apple Watch », la montre conserve ses retours haptiques de changement d’étape. Le fonctionnement audio en arrière-plan dépend des limites système.</p>
 </section>
 <section id="consignes">
 <h2>Les consignes : vos repères pour un exercice</h2>
@@ -111,7 +90,7 @@ footer { border-top:1px solid #30464c; font-size:.9rem; margin-top:2rem; }
 <h2>Terminer avec ou sans enregistrement</h2>
 <p>Sur l’écran de fin, vous choisissez ce que vous souhaitez conserver :</p>
 <ul>
-<li><strong>« Terminer et enregistrer »</strong> ajoute le résultat à l’historique PullX, avec les informations que vous avez renseignées. Si une séance Santé a été lancée sur Apple Watch et que les autorisations nécessaires sont accordées, ce choix demande aussi son enregistrement dans Santé.</li>
+<li><strong>« Terminer et enregistrer »</strong> ajoute le résultat à l’historique PullX, avec les informations que vous avez renseignées. En mode « iPhone uniquement », aucun entraînement n’est ajouté à Santé. En mode « Avec Apple Watch », si une séance Santé a été lancée sur la montre et que les autorisations nécessaires sont accordées, ce choix demande aussi son enregistrement dans Santé.</li>
 <li><strong>« Terminer sans enregistrer »</strong> écarte le résultat en attente : aucune entrée n’est ajoutée à l’historique PullX pour cette exécution. La séance Santé en cours sur la montre est également écartée.</li>
 </ul>
 <p>Ce choix ne supprime pas le programme de la bibliothèque. L’historique PullX et les séances enregistrées dans Santé sont deux copies distinctes : supprimer une entrée de l’historique PullX ne supprime pas sa copie dans Santé. Pour celle-ci, utilisez l’app Santé d’Apple.</p>
@@ -145,6 +124,6 @@ footer { border-top:1px solid #30464c; font-size:.9rem; margin-top:2rem; }
 </section>
 <p><a href="support.html">Retour à l’assistance et au formulaire de contact</a></p>
 </main>
-<footer>PullX · iPhone et Apple Watch · <a href="support.html">Assistance</a> · <a href="privacy-policy.html">Confidentialité</a></footer>
+<footer>PullX · iPhone et Apple Watch · <a href="support.html">Assistance</a> · <a href="privacy-policy.html">Confidentialité</a><a class="back-top" href="#top">Retour en haut <span aria-hidden="true">↑</span></a><p class="date">Dernière mise à jour : 29 octobre 2026</p></footer>
 </body>
 </html>
